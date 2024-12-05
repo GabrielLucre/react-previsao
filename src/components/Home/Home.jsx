@@ -11,6 +11,7 @@ function Home() {
 
   async function searchCity() {
     const city = inputRef.current.value
+    const key = import.meta.env.VITE_API_KEY
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=pt_br&units=metric`
     const url5Days = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${key}&lang=pt_br&units=metric`
