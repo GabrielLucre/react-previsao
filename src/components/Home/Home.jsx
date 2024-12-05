@@ -11,7 +11,6 @@ function Home() {
 
   async function searchCity() {
     const city = inputRef.current.value
-    const key = "49ed3762ca4278861d1c4dfed6bf534f"
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=pt_br&units=metric`
     const url5Days = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${key}&lang=pt_br&units=metric`
